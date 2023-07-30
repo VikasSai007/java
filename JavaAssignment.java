@@ -74,9 +74,7 @@ class EmployeeDetails extends Thread implements DassaultSystemes{
 		public void setBankName(String bankName) {
 			this.bankName = bankName;
 		}
-    	
-    	
-    	
+    		
     	
     }
 	public Salary work(EmployeeSalaryDetails salaryDetails,EmployeeDetails details,Tax tax){
@@ -98,7 +96,7 @@ class EmployeeDetails extends Thread implements DassaultSystemes{
 		
 		Tax tax = new Tax();
 		for(int i=1;i<=21;i++) {
-			System.out.println(this.employeeName+" is Working on "+i+" working day");
+			System.out.println(this.employeeName+" is Working on "+i+" working day ");
 			String str  =i + " day log";
 			employeeLogList.add(str);
 			try {
@@ -122,14 +120,14 @@ class EmployeeDetails extends Thread implements DassaultSystemes{
 		}catch(IOException e){
 			e.printStackTrace();
 		}
-		System.out.println(s.getSalaryAfterTax()+"is Credited");
+		System.out.println(s.getSalaryAfterTax()+" is Credited on "+this.employeeName+" account");
 		
 		
 	}
 }
 class Tax{
-	public final int HouseLoanTax = 2000;
-	public final int MutualFundsTax = 1500;
+	public static final int HouseLoanTax = 2000;
+	public static final int MutualFundsTax = 1500;
 }
 class Salary{
 	private int totalSalary;
