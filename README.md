@@ -84,3 +84,4 @@ TO START THE HSQLDB SERVER ->
 
 
 8. explore the other commands by right clicking on the table name
+https://3ds.zoom.us/j/9868390775?pwd=bWFwWnFCZmlBN2ZNMmx2U0dzb1JxUT09
